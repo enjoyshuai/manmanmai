@@ -1,0 +1,233 @@
+@baseColor: #ff841d;
+
+body {
+  background-color: #f5f5f5;
+}
+
+//头部块样式
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: @baseColor;
+  > #logo {
+    > img {
+      height: 25px;
+    }
+  }
+  > #app {
+    float: right;
+    > img {
+      height: 34px;
+    }
+  }
+}
+
+//搜索块样式
+
+#search {
+  background-color: #fff;
+  padding: 10px;
+  > form {
+    padding-right: 70px;
+    position: relative;
+    > input[type="search"] {
+      width: 100%;
+      height: 30px;
+      border: 0;
+      border-radius: 15px;
+      background-color: #f5f5f5;
+      padding-left: 10px;
+    }
+    > input[type="submit"] {
+      width: 63px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 15px;
+      background-color: @baseColor;
+      color: #fff;
+      border: 0;
+    }
+  }
+}
+
+
+
+//菜单块样式
+
+
+#menu{
+  background-color: #fff;
+  padding: 10px;
+  > .container{
+    >.row{
+      >div:nth-last-child(-n+4){
+        display: none;
+      }
+    }
+  }
+  div{
+    text-align: center;
+    padding-left:0;
+    padding-right: 0;
+  }
+  a{
+    display: block;
+    margin-top: 10px;
+    > img{
+      width: 50px;
+      height: 50px;
+    }
+    > p {
+      font-size: 12px;
+      margin: 5px;
+    }
+  }
+}
+
+
+
+//商品块样式
+
+#recommend{
+  margin-top:10px;
+  > a{
+    display: block;
+  }
+   .rec{
+    height: 35px;
+    background-color: #ff9000;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    padding-left: 10px;
+    line-height: 17px;
+    color:#fff;
+     > strong{
+       font-size: 18px;
+       line-height: 32px;
+       float: left;
+       height: 100%;
+     }
+     > img{
+       float: right;
+       background-color: red;
+     }
+  }
+  >.recommon-list{
+    width: 100%;
+    >.media{
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 14px 8px;
+      border-bottom: 1px solid #e0e0e0;
+      >a{
+        >img{
+          width: 100px;
+          height: 100px;
+          display: block;
+        }
+      }
+      .comment {
+        float: right;
+      }
+      > .media-body{
+        padding:0;
+        .from{
+          font-size: 12px;
+          color:#a1a1a1;
+        }
+        i{
+          width: 14px;
+          height: 15px;
+          display: inline-block;
+          -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          vertical-align: top;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//底部样式
+
+#footer {
+    margin:10px 0 20px 0;
+    > a:first-child{
+      list-style: none;
+      display: block;
+      line-height: 30px;
+      background: #F4F4F4;
+      text-decoration: none;
+      font-size: 13px;
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+      background-image: -moz-linear-gradient(#ffffff, #f4f4f4);
+      background-image: -ms-linear-gradient(#ffffff, #f4f4f4);
+      background-image: -o-linear-gradient(#ffffff, #f4f4f4);
+      background-image: linear-gradient(#ffffff, #f4f4f4);
+      -moz-background-clip: padding;
+      margin: 10px 0 20px 0;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .sen {
+      height: 35px;
+      background-color: #ff9000;
+      background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+      padding-left: 10px;
+      line-height: 17px;
+      color:#fff;
+      > strong{
+        font-size: 18px;
+        line-height: 32px;
+        float: left;
+        height: 100%;
+      }
+      > img{
+        float: right;
+        background-color: red;
+      }
+    }
+    > .foot{
+      margin-top: 10px;
+      border-top: 1px solid #c4c4c4;
+      border-bottom: 1px solid #c4c4c4;
+
+      height: 34px;
+      line-height: 34px;
+      > a{
+        text-align: center;
+        border-right: 1px solid #c4c4c4;
+      }
+      > a:last-child{
+        border-right:none;
+        >img{
+          width: 15px;
+          height: 15px;
+          vertical-align: middle;
+          margin-top: -5px;
+          margin-right: 2px;
+        }
+      }
+    }
+    > .end {
+      margin-top:10px;
+      text-align: center;
+      color: #c4c4c4;
+      > p {
+        margin: 0;
+        font-size: 12px;
+        >a:first-child{
+          color: red;
+        }
+      }
+    }
+  }

@@ -1,0 +1,200 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: #ff841d;
+}
+#header > #logo > img {
+  height: 25px;
+}
+#header > #app {
+  float: right;
+}
+#header > #app > img {
+  height: 34px;
+}
+#search {
+  background-color: #fff;
+  padding: 10px;
+}
+#search > form {
+  padding-right: 70px;
+  position: relative;
+}
+#search > form > input[type="search"] {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  padding-left: 10px;
+}
+#search > form > input[type="submit"] {
+  width: 63px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: #fff;
+  border: 0;
+}
+#menu {
+  background-color: #fff;
+  padding: 10px;
+}
+#menu > .container > .row > div:nth-last-child(-n+4) {
+  display: none;
+}
+#menu div {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+#menu a {
+  display: block;
+  margin-top: 10px;
+}
+#menu a > img {
+  width: 50px;
+  height: 50px;
+}
+#menu a > p {
+  font-size: 12px;
+  margin: 5px;
+}
+#recommend {
+  margin-top: 10px;
+}
+#recommend > a {
+  display: block;
+}
+#recommend .rec {
+  height: 35px;
+  background-color: #ff9000;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  padding-left: 10px;
+  line-height: 17px;
+  color: #fff;
+}
+#recommend .rec > strong {
+  font-size: 18px;
+  line-height: 32px;
+  float: left;
+  height: 100%;
+}
+#recommend .rec > img {
+  float: right;
+  background-color: red;
+}
+#recommend > .recommon-list {
+  width: 100%;
+}
+#recommend > .recommon-list > .media {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 14px 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#recommend > .recommon-list > .media > a > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+#recommend > .recommon-list > .media .comment {
+  float: right;
+}
+#recommend > .recommon-list > .media > .media-body {
+  padding: 0;
+}
+#recommend > .recommon-list > .media > .media-body .from {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+#recommend > .recommon-list > .media > .media-body i {
+  width: 14px;
+  height: 15px;
+  display: inline-block;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 4px;
+}
+#footer {
+  margin: 10px 0 20px 0;
+}
+#footer > a:first-child {
+  list-style: none;
+  display: block;
+  line-height: 30px;
+  background: #F4F4F4;
+  text-decoration: none;
+  font-size: 13px;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+  background-image: -moz-linear-gradient(#ffffff, #f4f4f4);
+  background-image: -ms-linear-gradient(#ffffff, #f4f4f4);
+  background-image: -o-linear-gradient(#ffffff, #f4f4f4);
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+  -moz-background-clip: padding;
+  margin: 10px 0 20px 0;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  text-align: center;
+}
+#footer .sen {
+  height: 35px;
+  background-color: #ff9000;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  padding-left: 10px;
+  line-height: 17px;
+  color: #fff;
+}
+#footer .sen > strong {
+  font-size: 18px;
+  line-height: 32px;
+  float: left;
+  height: 100%;
+}
+#footer .sen > img {
+  float: right;
+  background-color: red;
+}
+#footer > .foot {
+  margin-top: 10px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+#footer > .foot > a {
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+#footer > .foot > a:last-child {
+  border-right: none;
+}
+#footer > .foot > a:last-child > img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+#footer > .end {
+  margin-top: 10px;
+  text-align: center;
+  color: #c4c4c4;
+}
+#footer > .end > p {
+  margin: 0;
+  font-size: 12px;
+}
+#footer > .end > p > a:first-child {
+  color: red;
+}

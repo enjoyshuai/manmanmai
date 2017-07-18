@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>fs-page4</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/bijia.css"/>
+</head>
+<body>
+<!--头部块-->
+<header id="header">
+    <a href="index.html" id="logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" id="app">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--搜索块-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入要搜索的比价商品"/>
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+<!--导航块-->
+<nav id="nav">
+    <a href="#">首页</a>>
+    <a href="#">电视</a>>
+    <a href="#">乐视TV</a>
+</nav>
+<section id="main">
+    <div class="tit" style="text-align: center">
+        夏普(SHARP) LCD-70SU665A 70英寸 4K超高清智能液晶电视
+    </div>
+    <div id="pic">
+        <img src="images/ds.jpg" alt=""/>
+        <a href="">
+            <img src="images/sc.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="tab">
+        <ul>
+            <li class="cur"><a href="#">比价购买</a></li>
+            <li class="mtab"><a href="#">产品参数</a></li>
+            <li><a href="#">评价</a></li>
+        </ul>
+    </div>
+    <div class="table"></div>
+</section>
+<section class="note">
+    * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+</section>
+<section id="news">
+    <div class="pj_t">
+        <p>优选网友评价</p>
+    </div>
+    <div class="content">
+        <div class="clearfix">
+            <i class="fl">用户名</i>
+            <i class="fr">日期</i>
+        </div>
+        <div class="clearfix">
+            <i class="fr">评价地</i>
+        </div>
+        <div class="con">评价内容</div>
+        <a href="">回复</a>
+    </div>
+</section>
+<section id="btn">
+    <a href="#" class="morein">查看更多评价</a>
+</section>
+<!--底部区域-->
+<footer id="footer">
+    <div class="foot">
+        <a class='col-xs-4' href="javascript:;">登录</a>
+        <a class='col-xs-4' href="javascript:;">注册</a>
+        <a class='col-xs-4' href="#">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="end">
+        <p>
+            <a href="javascript:;">手机app下载</a>
+            <a href="javascript:;">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/bijia.js"></script>
+<script id="info" type="text/html">
+    {{each result as value i}}
+    <div class="tit" style="text-align: center">
+        {{value.productName}}
+    </div>
+    <div id="pic">
+        {{#value.productImg}}
+        <a href="">
+            <img src="images/sc.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="tab">
+        <ul>
+            <li class="cur"><a href="#">比价购买</a></li>
+            <li class="mtab"><a href="#">产品参数</a></li>
+            <li><a href="#">评价</a></li>
+        </ul>
+    </div>
+    <div class="table">
+        {{#value.bjShop}}
+    </div>
+    {{/each}}
+</script>
+<script id="pinjia" type="text/html">
+    {{each result as value i }}
+        <div class="clearfix">
+            <i class="fl">{{value.comName}}</i>
+            <i class="fr">{{value.comTime}}</i>
+        </div>
+        <div class="clearfix">
+            <i class="fr">{{value.comFrom}}</i>
+        </div>
+        <div class="con">{{value.comContent}}</div>
+        <a href="">回复</a>
+    {{/each}}
+</script>
+</html>

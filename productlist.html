@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fs-page3</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/productlist.css"/>
+</head>
+<body>
+<!--头部块-->
+<header id="header">
+    <a href="index.html" id="logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" id="app">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--搜索块-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入要搜索的比价商品"/>
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+
+
+
+
+<nav id="nav">
+    <ul>
+        <li><a href="#">综合</a></li>
+        <li><a href="#">销量</a></li>
+        <li><a href="#">价格</a></li>
+        <li><i></i><a href="#">筛选</a></li>
+    </ul>
+</nav>
+<section id="main">
+    <div class="recommon-list">
+        <a href="">
+        <div class="media">
+            <div class="media-left media-middle">
+                    <img class="media-object" src="" alt="">
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">Middle aligned media</h5>
+                <p></p>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+</section>
+
+
+<!--分页-->
+<nav id="page">
+    <ul class="pager">
+        <div class="row">
+            <li class="previous col-xs-4"><a>上一页</a></li>
+            <li class="col-xs-4">
+                <select name="" id="morepage">
+                    <a href="#"><option value="">1</option></a>
+                </select>
+            </li>
+            <li class="next col-xs-4"><a >下一页</a></li>
+        </div>
+    </ul>
+</nav>
+<!--底部区域-->
+<footer id="footer">
+    <div class="foot">
+        <a class = 'col-xs-4' href="javascript:;">登录</a>
+        <a class = 'col-xs-4' href="javascript:;">注册</a>
+        <a class = 'col-xs-4' href="#">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="end">
+        <p>
+            <a href="javascript:;">手机app下载</a>
+            <a href="javascript:;">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/productlist.js"></script>
+<script id="file" type="text/html">
+    {{each result as value i}}
+    <a href="bijia.html?productid={{value.productId}}">
+        <div class="media">
+            <div class="media-left media-middle">
+                    {{#value.productImg}}
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{value.productName}}</h5>
+                <p>{{value.productPrice}}</p>
+                <div class="box">
+                    <div>{{value.productQuote}}</div>
+                    <div>{{value.productCom}}</div>
+                </div>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+</html>

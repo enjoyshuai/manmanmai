@@ -1,0 +1,180 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: #ff841d;
+  text-align: center;
+  position: relative;
+}
+#header .back {
+  width: 50px;
+  height: 30px;
+}
+#header > h3 {
+  margin: 0;
+  color: #fff;
+  margin: 0 50px;
+}
+#header > #app {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#header > #app > img {
+  width: 32px;
+  height: 32px;
+}
+#header #logo {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+#link {
+  position: relative;
+}
+#link ul {
+  width: 100%;
+  padding-right: 47px;
+  margin-bottom: 0px;
+  height: 38px;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+}
+#link ul > li {
+  float: left;
+  line-height: 37px;
+  width: 33%;
+  position: relative;
+  box-sizing: border-box;
+}
+#link ul > li > a {
+  display: block;
+  text-align: center;
+  color: #5a5a5a;
+  font-size: 16px;
+}
+#link ul > li > a > i {
+  display: inline-block;
+  width: 22px !important;
+  height: 22px !important;
+  vertical-align: middle !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  line-height: 22px;
+}
+#link > .popbox ul {
+  height: 100%;
+  padding-right: 0px;
+}
+#link > .popbox ul > li {
+  float: none;
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+  padding-left: 10px;
+}
+#link > .popbox ul > li > a {
+  text-align: left;
+}
+#link > .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+#link > .search > i {
+  font-size: 20px;
+  color: #5a5a5a;
+}
+#bd {
+  background-color: #f1f1f1;
+  padding: 6px 0px;
+}
+#bd > .masonry {
+  width: 98%;
+  margin: 0 auto;
+}
+#bd > .masonry li {
+  width: 50%;
+  float: left;
+}
+#bd > .masonry li > a {
+  display: block;
+  margin: 4px;
+  background-color: #ffffff;
+}
+#bd > .masonry li > a > .pic {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#bd > .masonry li > a > .pic > img {
+  max-width: 100%;
+}
+#bd > .masonry li > a > .title {
+  color: #333333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 6px;
+}
+#bd > .masonry li > a > .other {
+  padding: 6px;
+}
+#bd > .masonry li > a > .other > .price {
+  float: left;
+  color: #f8601d;
+  font-size: 20px;
+}
+#bd > .masonry li > a > .other > .price > em {
+  font-style: normal;
+  font-size: 10px;
+  color: #f8601d;
+}
+#footer {
+  padding: 10px 0 20px 0;
+}
+#footer > .foot {
+  margin-top: 10px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+#footer > .foot > a {
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+#footer > .foot > a:last-child {
+  border-right: none;
+}
+#footer > .foot > a:last-child > img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+#footer > .end {
+  margin-top: 10px;
+  text-align: center;
+  color: #c4c4c4;
+}
+#footer > .end > p {
+  margin: 0;
+  font-size: 12px;
+}
+#footer > .end > p > a:first-child {
+  color: red;
+}

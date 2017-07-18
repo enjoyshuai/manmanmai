@@ -1,0 +1,130 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: #ff841d;
+  text-align: center;
+  position: relative;
+}
+#header .back {
+  width: 50px;
+  height: 30px;
+}
+#header > h3 {
+  margin: 0;
+  color: #fff;
+  margin: 0 50px;
+}
+#header > #app {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#header > #app > img {
+  width: 32px;
+  height: 32px;
+}
+#header #logo {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+#recommend > .recommon-list {
+  width: 100%;
+}
+#recommend > .recommon-list > .media {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 14px 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#recommend > .recommon-list > .media > a {
+  display: block;
+}
+#recommend > .recommon-list > .media > a > .media-left > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+#recommend > .recommon-list > .media > a > .media-body {
+  padding: 0;
+}
+#recommend > .recommon-list > .media > a > .media-body .from {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+#recommend > .recommon-list > .media > a > .media-body i {
+  width: 14px;
+  height: 15px;
+  display: inline-block;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 4px;
+}
+#recommend > .recommon-list > .media > a > .media-body .comment {
+  float: right;
+}
+#recommend > .recommon-list > .media > a > .media-body > h5 p {
+  color: #000;
+}
+#page {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px 0;
+}
+#page > .pager li {
+  text-align: center;
+}
+#page > .pager li > a {
+  float: none;
+  cursor: pointer;
+}
+#page > .pager li > select {
+  height: 32px;
+  padding: 0px 15px;
+  font-size: 16px;
+}
+#footer {
+  margin: 10px 0 20px 0;
+}
+#footer > .foot {
+  margin-top: 10px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+#footer > .foot > a {
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+#footer > .foot > a:last-child {
+  border-right: none;
+}
+#footer > .foot > a:last-child > img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+#footer > .end {
+  margin-top: 10px;
+  text-align: center;
+  color: #c4c4c4;
+}
+#footer > .end > p {
+  margin: 0;
+  font-size: 12px;
+}
+#footer > .end > p > a:first-child {
+  color: red;
+}

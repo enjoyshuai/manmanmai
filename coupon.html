@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>fs-page5</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/coupon.css"/>
+    <link rel="stylesheet" href="css/download/iconfont.css"/>
+</head>
+<body>
+<!--头部块-->
+<header id="header">
+    <div class="back fl">
+        <a href="javascript:;" id="logo" class="iconfont icon-back"></a>
+    </div>
+    <h3>优惠券</h3>
+    <a href="javascript:;" id="app">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--主体块-->
+<section id="main">
+    <ul class="ulBox">
+        <li>
+            <a href="#">
+                <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt=""/>
+                <br/>
+                肯德基
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+<section id="menu" class="nav">
+    <a href="#">首页</a>&nbsp;>&nbsp;
+    <a href="#">优惠券</a>
+</section>
+
+<!--底部区域-->
+<footer id="footer">
+
+
+    <div class="foot">
+        <a class = 'col-xs-4' href="javascript:;">登录</a>
+        <a class = 'col-xs-4' href="javascript:;">注册</a>
+        <a class = 'col-xs-4' href="#">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="end">
+        <p>
+            <a href="javascript:;">手机app下载</a>
+            <a href="javascript:;">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/coupon.js"></script>
+<script id="mainTmp" type="text/html">
+    {{each result as value i}}
+    <li>
+        <a href="couponproduct.html?couponid={{value.couponId}}&coupontitle={{value.couponTitle}}">
+            <img src="{{value.couponImg}}" alt=""/>
+            <br/>
+            {{value.couponTitle}}
+        </a>
+    </li>
+    {{/each}}
+</script>
+</html>

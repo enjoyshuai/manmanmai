@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>fs-page5</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/moneyproduct.css"/>
+    <link rel="stylesheet" href="css/download/iconfont.css"/>
+</head>
+<body>
+<!--头部块-->
+<header id="header">
+   <div class="back fl">
+       <a href="javascript:;" id="logo" class="iconfont icon-back"></a>
+   </div>
+
+    <h3>国内折扣</h3>
+    <a href="javascript:;" id="app">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+
+
+<!--主体-->
+<section id="main">
+    <div class="container">
+        <h3>移动端凑单品：海天 鲜味 生抽 1.28L</h3>
+
+        <div class="info">
+            <span>京东商城</span>
+            <span>10-25 14:10</span>
+            <span>小编烟火/慢慢买</span>
+        </div>
+        <div class="con">
+            <div class="left">
+                <p>海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。</p>
+
+                <p>目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。</p>
+
+                <p><br/></p>
+
+                <p><br/></p>
+            </div>
+            <div class="img">
+                <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"
+                     alt="移动端凑单品：海天 鲜味 生抽 1.28L">
+            </div>
+            <div class="right">
+                <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"
+                     alt="移动端凑单品：海天 鲜味 生抽 1.28L">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--购买链接-->
+<section id="btn">
+    <input type="button" value="前往购买"/>
+</section>
+
+
+<!--评论-->
+<section id="news">
+    <div class="cu-content-pl ui-border-t">
+        <div class="tit">发表评论</div>
+        <div class="reply">
+            <div class="form">
+                <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+                <input name="ctl00$ContentBody$lbl_fbr" id="ctl00_ContentBody_lbl_fbr" value="手机端网友14***154"
+                       type="hidden">
+                <input name="ctl00$ContentBody$hid_name" id="ctl00_ContentBody_hid_name" value="移动端凑单品：海天 鲜味 生抽 1.28L"
+                       type="hidden">
+
+                <div class="ctrl">
+                    <input name="ctl00$ContentBody$Button1" value="发表评论" id="ctl00_ContentBody_Button1" class="tjdp"
+                           type="submit">
+                </div>
+            </div>
+        </div>
+        <div class="tit" id="newcomment">最新评论</div>
+        <div class="list">
+            <ul>
+                <li class="ui-border-b">
+                    <div class="userimg"><img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg"></div>
+                    <div class="con">
+                        <div class="name clearfix">
+                            <div class="username">赶鸭子上架</div>
+                            <div class="time">2016/10/25 14:18:45</div>
+                        </div>
+                        <div class="content">比超市便宜了几块</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--底部区域-->
+<footer id="footer">
+    <div class="foot">
+        <a class='col-xs-4' href="javascript:;">登录</a>
+        <a class='col-xs-4' href="javascript:;">注册</a>
+        <a class='col-xs-4' href="#">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="end">
+        <p>
+            <a href="javascript:;">手机app下载</a>
+            <a href="javascript:;">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/moneyproduct.js"></script>
+<script id="mainTmp" type="text/html">
+    {{each result as value i}}
+    <div class="container">
+        <h3>{{value.productName}}</h3>
+        <div class="info">
+            <span>{{value.productFrom}}</span>
+            <span>{{value.productTime}}</span>
+            <span>{{value.productTips}}</span>
+        </div>
+        <div class="con">
+            <div class="left">
+                <p>{{value.productInfo}}</p>
+                <p>{{value.productInfo1}}</p>
+                <p><br/></p>
+                <p><br/></p>
+            </div>
+            <div class="img">
+                {{#value.productImgSm}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+</html>

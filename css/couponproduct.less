@@ -1,0 +1,222 @@
+@baseColor: #ff841d;
+
+body {
+  background-color: #fff;
+}
+
+//头部块样式
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: #f4483e;
+  text-align: center;
+  position: relative;
+  .back{
+    width: 50px;
+    height: 30px;
+  }
+  >h3{
+    margin: 0;
+    color: #fff;
+    margin: 0 50px;
+    font-size: 20px;
+  }
+  >#app{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    >img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+  #logo{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #fff;
+    font-size: 25px;
+  }
+}
+
+//主体样式
+#main{
+  .con{
+    .ulBox{
+      position: relative;
+      >i{
+        position: absolute;
+        right: 0;
+        top: 35%;
+        font-size: 30px;
+        color: #ccc;
+      }
+    }
+    li{
+      border-bottom: 1px solid #e7e7e7;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: right center;
+      list-style: none;
+      position: relative;
+      overflow: hidden;
+      a{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        .pic{
+          width: 100px;
+          height: 80px;
+          overflow: hidden;
+          margin-right: 10px;
+          float: left;
+          img{
+            max-width: 100px;
+          }
+        }
+        .info{
+          padding-right: 30px;
+          overflow: hidden;
+          .list{
+            h3{
+              margin: 0px;
+              padding: 0px;
+              word-break: break-all;
+              text-align: justify;
+              font-size: 14px;
+              font-weight: normal;
+              color: #333333;
+              line-height: 20px;
+            }
+            h2{
+              font-size: 100%;
+              margin: 0;
+            }
+          }
+          .time{
+            font-size: 12px;
+            color: #EE7700;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//遮罩样式
+#galleryOverlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100000;
+  background-color: #222;
+  background-color: rgba(0,0,0,0.8);
+  overflow: hidden;
+  display: none;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  #gallerySlider {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    transition: left 0.4s ease;
+    .placeholder {
+      height: 100%;
+      line-height: 1px;
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      img{
+        display: inline-block;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        width: 200px;
+        height: 160px;
+      }
+    }
+    .placeholder::before{
+        content: "";
+        display: inline-block;
+        height: 50%;
+        width: 1px;
+        margin-right: -1px;
+    }
+  }
+  #prevArrow,#nextArrow{
+    border: none;
+    text-decoration: none;
+    background: url(../images/arrows.png) no-repeat;
+    opacity: 0.5;
+    cursor: pointer;
+    position: absolute;
+    width: 43px;
+    height: 58px;
+    top: 50%;
+    margin-top: -29px;
+    transition: opacity 0.2s ease;
+  }
+  #prevArrow{
+    background-position: left top;
+    left: 10px;
+  }
+  #nextArrow{
+    background-position: right top;
+    right: 10px;
+  }
+}
+.vis{
+  opacity: 1 !important;
+}
+
+
+//底部样式
+
+#footer {
+  margin:10px 0 20px 0;
+  background-color: #efefef;
+  padding-bottom: 20px;
+  > .foot{
+    margin-top: 10px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+
+    height: 34px;
+    line-height: 34px;
+    > a{
+      text-align: center;
+      border-right: 1px solid #c4c4c4;
+    }
+    > a:last-child{
+      border-right:none;
+      >img{
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+        margin-top: -5px;
+        margin-right: 2px;
+      }
+    }
+  }
+  > .end {
+    margin-top:10px;
+    text-align: center;
+    color: #c4c4c4;
+    > p {
+      margin: 0;
+      font-size: 12px;
+      >a:first-child{
+        color: red;
+      }
+    }
+  }
+}

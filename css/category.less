@@ -1,0 +1,155 @@
+@baseColor:#ff841d;
+body{
+  background-color: #f5f5f5;
+}
+//头部块样式
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: @baseColor;
+  > #logo {
+    > img {
+      height: 25px;
+    }
+  }
+  > #app {
+    float: right;
+    > img {
+      height: 34px;
+    }
+  }
+}
+
+//搜索块样式
+
+#search {
+  background-color: #fff;
+  padding: 10px;
+  > form {
+    padding-right: 70px;
+    position: relative;
+    > input[type="search"] {
+      width: 100%;
+      height: 30px;
+      border: 0;
+      border-radius: 15px;
+      background-color: #f5f5f5;
+      padding-left: 10px;
+    }
+    > input[type="submit"] {
+      width: 63px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 15px;
+      background-color: @baseColor;
+      color: #fff;
+      border: 0;
+    }
+  }
+}
+
+#main{
+  overflow: hidden;
+  margin: 5px;
+  border: 1px solid #f4f4f4;
+  h4{
+    >a{
+      height: 40px;
+      background: url(../images/arrow1.gif) right center no-repeat;
+      line-height: 40px;
+      color: #000;
+      font-size: 16px;
+      display: block;
+      padding-left: 16px;
+      font-weight: bold;
+    }
+  }
+  .panel-heading{
+    background-color: #ededed;
+    padding: 0;
+  }
+  .panel-body{
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    >.row{
+      >div{
+        height: 40px;
+        line-height: 40px;
+        border-right: 1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        padding: 0;
+        >a{
+          color:#000;
+          display:block;
+        }
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+
+
+#footer {
+  margin:10px 0 20px 0;
+  .sen {
+    height: 35px;
+    background-color: #ff9000;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    padding-left: 10px;
+    line-height: 17px;
+    color:#fff;
+    > strong{
+      font-size: 18px;
+      line-height: 32px;
+      float: left;
+      height: 100%;
+    }
+    > img{
+      float: right;
+      background-color: red;
+    }
+  }
+  > .foot{
+    margin-top: 10px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+
+    height: 34px;
+    line-height: 34px;
+    > a{
+      text-align: center;
+      border-right: 1px solid #c4c4c4;
+    }
+    > a:last-child{
+      border-right:none;
+      >img{
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+        margin-top: -5px;
+        margin-right: 2px;
+      }
+    }
+  }
+  > .end {
+    margin-top:10px;
+    text-align: center;
+    color: #c4c4c4;
+    > p {
+      margin: 0;
+      font-size: 12px;
+      >a:first-child{
+        color: red;
+      }
+    }
+  }
+}

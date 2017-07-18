@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
-    <title>方帅-慢慢买</title>
+    <title>fs-page5</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/base.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
     <link rel="stylesheet" href="css/download/iconfont.css"/>
 </head>
 <body>
 <!--头部块-->
 <header id="header">
-    <a href="javascript:;" id="logo">
-        <img src="images/header_logo.png" alt=""/>
-    </a>
+    <div class="back fl">
+        <a href="javascript:;" id="logo" class="iconfont icon-back"></a>
+    </div>
+    <h3>省钱控-最新优惠</h3>
     <a href="javascript:;" id="app">
         <img src="images/header_app.png" alt=""/>
     </a>
 </header>
-<!--搜索块-->
-<section id="search">
-    <form action="#">
-        <input type="search" placeholder="请输入要搜索的比价商品"/>
-        <input type="submit" value="搜索"/>
-    </form>
-</section>
-<!--菜单块-->
-<section id="menu">
-</section>
+
+
 <!--商品块-->
 <section id="recommend">
-    <a href="javascript:;">
-        <div class='rec'>
-            <strong>超值折扣推荐</strong>
-            <img src="" alt=""/>
-        </div>
-    </a>
-
     <div class="recommon-list">
         <div class="media">
             <div class="media-left media-middle">
@@ -53,17 +38,25 @@
         </div>
     </div>
 </section>
+
+<!--分页-->
+<nav id="page">
+    <ul class="pager">
+        <div class="row">
+            <li class="previous col-xs-4"><a>上一页</a></li>
+            <li class="col-xs-4">
+                <select name="" id="morepage">
+                    <a href="#"><option value="">1</option></a>
+                </select>
+            </li>
+            <li class="next col-xs-4"><a >下一页</a></li>
+        </div>
+    </ul>
+</nav>
+
 <!--底部区域-->
 <footer id="footer">
-    <a href="javascript:;">
-        更多优惠信息>>
-    </a>
-    <a href="javascript:;">
-        <div class="sen">
-            <strong>品牌排行</strong>
-            <img src="" alt=""/>
-        </div>
-    </a>
+
 
     <div class="foot">
         <a class = 'col-xs-4' href="javascript:;">登录</a>
@@ -90,7 +83,7 @@
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/iscroll.js"></script>
-<script src="js/index.js"></script>
+<script src="js/moneyctrl.js"></script>
 <script id="test" type="text/html">
     <div class="container">
         <div class="row">
@@ -107,29 +100,22 @@
 </script>
 <script type="text/html" id="recommenTmp">
     {{each result as value i}}
-    <div class="media">
-        <a class="media-left" href="#">
-            {{#value.productImgSm}}
-        </a>
-        <div class="media-body">
-            <h5>{{value.productName}}</h5>
-            <p class="price">{{value.productPinkage}}</p>
-            <span class="from">{{value.productFrom}} | {{value.productTime}}</span>
-            <span class="comment">
-                <i class="iconfont icon-comments"></i>{{value.productComCount.replace("有","").replace('人评论',"")}}
-            </span>
+
+        <div class="media">
+            <a href="moneyproduct.html?productid={{value.productId}}">
+                <div class="media-left" href="#">
+                    {{#value.productImgSm}}
+                </div>
+                <div class="media-body">
+                    <h5>{{value.productName}}</h5>
+                    <p class="price">{{value.productPinkage}}</p>
+                    <span class="from">{{value.productFrom}} | {{value.productTime}}</span>
+                            <span class="comment"><i class="iconfont icon-comments"></i> {{value.productComCount.replace("有","").replace('人评论',"")}}
+                            </span>
+                </div>
+            </a>
         </div>
-    </div>
+
     {{/each}}
 </script>
-=======
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-    <div>我最帅</div>
-</body>
->>>>>>> 603b59c79b7c5bb467f5392a9d71b5ab3aa51ff8
 </html>

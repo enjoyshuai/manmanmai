@@ -1,0 +1,160 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: #e4393c;
+  text-align: center;
+  position: relative;
+}
+#header .back {
+  width: 50px;
+  height: 30px;
+}
+#header > h3 {
+  margin: 0;
+  color: #fff;
+  margin: 0 50px;
+  font-size: 20px;
+}
+#header > #app {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#header > #app > img {
+  width: 32px;
+  height: 32px;
+}
+#header #logo {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+#tab {
+  overflow: hidden;
+  height: 38px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  position: relative;
+}
+#tab > ul {
+  width: 790px;
+  padding: 0;
+  position: absolute;
+  transition: right 0.5s;
+}
+#tab > ul > li {
+  float: left;
+  height: 38px;
+  font-size: 14px;
+  line-height: 36px;
+}
+#tab > ul > li > a {
+  margin: 0 12px;
+  color: #000;
+}
+#recommend > .recommon-list {
+  width: 100%;
+}
+#recommend > .recommon-list > .media {
+  max-width: 960px;
+  margin: 5px auto;
+  background-color: #fff;
+  padding: 14px 8px;
+}
+#recommend > .recommon-list > .media > .media-left > img {
+  width: 135px;
+  height: 130px;
+  display: block;
+}
+#recommend > .recommon-list > .media > .media-body {
+  padding: 0;
+}
+#recommend > .recommon-list > .media > .media-body .from {
+  display: inline-block;
+  border: 1px dotted #e4393c;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0px 5px;
+  font-size: 12px;
+  color: #e4393c;
+  position: relative;
+  z-index: 1;
+}
+#recommend > .recommon-list > .media > .media-body .from > a {
+  color: #e4393c;
+}
+#recommend > .recommon-list > .media > .media-body .comment {
+  float: right;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  background-color: #ff5e5d;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0px 10px;
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+}
+#recommend > .recommon-list > .media > .media-body .comment > a {
+  color: #fff;
+}
+#recommend > .recommon-list > .media > .media-body .price {
+  color: red;
+  font-size: 18px;
+}
+#recommend > .recommon-list > .media > .media-body .price > i,
+#recommend > .recommon-list > .media > .media-body .price em {
+  font-size: 14px;
+}
+#recommend > .recommon-list > .media > .media-body .price > del {
+  font-size: 10px;
+  margin-left: 5px;
+  color: #cccccc;
+}
+#recommend > .recommon-list > .media .bar {
+  margin-bottom: 15px;
+}
+#footer {
+  margin: 10px 0 20px 0;
+}
+#footer > .foot {
+  margin-top: 10px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+#footer > .foot > a {
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+#footer > .foot > a:last-child {
+  border-right: none;
+}
+#footer > .foot > a:last-child > img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+#footer > .end {
+  margin-top: 10px;
+  text-align: center;
+  color: #c4c4c4;
+}
+#footer > .end > p {
+  margin: 0;
+  font-size: 12px;
+}
+#footer > .end > p > a:first-child {
+  color: red;
+}

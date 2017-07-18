@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>fs-page5</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/couponproduct.css"/>
+    <link rel="stylesheet" href="css/download/iconfont.css"/>
+</head>
+<body>
+<!--头部块-->
+<header id="header">
+    <div class="back fl">
+        <a href="javascript:;" id="logo" class="iconfont icon-back"></a>
+    </div>
+    <h3 class="tit">优惠券</h3>
+    <a href="javascript:;" id="app">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+
+<!--主体块-->
+<section id="main">
+    <div style="font-size:12px; text-align:center; color:#999; margin:8px 0px;" >
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    <div class="con">
+        <ul>
+
+            <li class="ulBox">
+                <i class="iconfont icon-more"></i>
+                <a href="#">
+                    <div class="pic">
+                        <img src="http://d3.5ikfc.com/static/thumbs/717/kfc-5ikfc-71_p23.jpg" alt=""/>
+                    </div>
+                    <div class="info">
+                        <div class="list">
+                            <h3>C23  两人小食组 香辣鸡翅2块+黄金鸡块5块+薯条(中)+原味圣代(草莓酱/巧克力酱) 2017年7月凭肯德基优惠券</h3>
+                            <h2>
+                                <em>￥</em>
+                                "30.5"
+                            </h2>
+                        </div>
+                        <div class="time">有效期至7月31日</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!--遮罩-->
+<section id="galleryOverlay" style='display: none;'>
+    <div id="gallerySlider" style="left: 0%;">
+        <div class="placeholder">
+            <img src="http://d3.5ikfc.com/static/thumbs/717/kfc-5ikfc-71_p23.jpg" alt=""/>
+        </div>
+    </div>
+    <a id="prevArrow"></a>
+    <a id="nextArrow"></a>
+</section>
+
+
+<!--底部区域-->
+<footer id="footer">
+
+
+    <div class="foot">
+        <a class = 'col-xs-4' href="javascript:;">登录</a>
+        <a class = 'col-xs-4' href="javascript:;">注册</a>
+        <a class = 'col-xs-4' href="#">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="end">
+        <p>
+            <a href="javascript:;">手机app下载</a>
+            <a href="javascript:;">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/couponproduct.js"></script>
+<script id="mainTmp" type="text/html">
+    {{each result as value i}}
+    <li class="ulBox" data-couponid={{value.couponProductId}}>
+        <i class="iconfont icon-more"></i>
+        <a href="#">
+            <div class="pic">
+                {{#value.couponProductImg}}
+            </div>
+            <div class="info">
+                <div class="list">
+                    <h3>{{value.couponProductName}}</h3>
+                    <h2>
+                        {{value.couponProductPrice}}
+                    </h2>
+                </div>
+                <div class="time">{{value.couponProductTime}}</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script id="boxTmp" type="text/html">
+    {{each result as value i }}
+
+        <div class="placeholder">
+            {{#value.couponProductImg}}
+        </div>
+
+    {{/each}}
+</script>
+</html>

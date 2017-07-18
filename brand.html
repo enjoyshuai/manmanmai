@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>fs-category</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/brand.css"/>
+</head>
+<body>
+<!--头部块-->
+<header id="header">
+    <a href="index.html" id="logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="javascript:;" id="app">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!--搜索块-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入要搜索的比价商品"/>
+        <input type="submit" value="搜索"/>
+    </form>
+</section>
+<section id="nav">
+    <a href="">首页</a>>
+    <a href="">全部分类</a>>
+</section>
+
+
+<!--主体块-->
+<section id="main">
+    <div class="hd">
+        <h3>哪个牌子好</h3>
+    </div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne" data-num="1">
+                        大家电
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hd">
+        <h3>产品销量排行</h3>
+    </div>
+    <div class="recommon-list">
+
+    </div>
+    <div class="hd">
+        <h3>最新评论</h3>
+    </div>
+    <div class="box1 clearfix">
+    </div>
+    <div class="pllist">
+        <div class="plbox">
+            <a href="">
+            </a>
+
+            <div class="name">
+                "jb"
+                <i>2017/7/12</i>
+            </div>
+            <div class="con">
+                之前的遥控器不知道咋回事，以为没有电了，换了电池还不行，以为是电视的毛病，然后在网上看了一个，和原装的一样很好用，现在看av在也不用担心了，哈你懂的。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--底部区域-->
+<footer id="footer">
+    <div class="foot">
+        <a class='col-xs-4' href="javascript:;">登录</a>
+        <a class='col-xs-4' href="javascript:;">注册</a>
+        <a class='col-xs-4' href="#">
+            <img src="images/top.jpg" alt=""/>
+            返回顶部
+        </a>
+    </div>
+    <div class="end">
+        <p>
+            <a href="javascript:;">手机app下载</a>
+            <a href="javascript:;">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+</body>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/brand.js"></script>
+<script id="title" type="text/html">
+    {{each result as value i}}
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a href="brand.html?brandtitleid={{value.brandTitleId}}">
+                    <em class="top{{i+1}}">{{i+1}}</em>
+
+                    <div class="inner">
+
+                        <div class="fstit">{{value.brandName}}</div>
+                        <p>{{value.brandInfo}}</p>
+                    </div>
+                </a>
+            </h4>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+<script id="file" type="text/html">
+    {{each result as value i}}
+    <a>
+        <div class="media">
+            <div class="media-left media-middle">
+                {{#value.productImg}}
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{value.productName}}</h5>
+
+                <p>{{value.productPrice}}</p>
+
+                <div class="box">
+                    <div>{{value.productQuote}}</div>
+                    <div>{{value.productCom}}</div>
+                </div>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+<script id="newsTmp" type="text/html">
+    {{each result as value i}}
+    <div class="plbox">
+        <div class="name">
+            {{value.comName}}
+            <i>{{value.comTime}}</i>
+        </div>
+        <div class="con">
+            {{value.comContent}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+</html>

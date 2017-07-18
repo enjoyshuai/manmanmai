@@ -1,0 +1,198 @@
+@baseColor:#ff841d;
+body{
+  background-color: #fff;
+}
+//头部块样式
+#header {
+  height: 50px;
+  padding: 10px;
+  background-color: @baseColor;
+  > #logo {
+    > img {
+      height: 25px;
+    }
+  }
+  > #app {
+    float: right;
+    > img {
+      height: 34px;
+    }
+  }
+}
+
+//搜索块样式
+
+#search {
+  background-color: #fff;
+  padding: 10px;
+  > form {
+    padding-right: 70px;
+    position: relative;
+    > input[type="search"] {
+      width: 100%;
+      height: 30px;
+      border: 0;
+      border-radius: 15px;
+      background-color: #f5f5f5;
+      padding-left: 10px;
+    }
+    > input[type="submit"] {
+      width: 63px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 15px;
+      background-color: @baseColor;
+      color: #fff;
+      border: 0;
+    }
+  }
+}
+
+
+
+//导航样式
+#nav {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+  > ul{
+    >li{
+      float: left;
+      width: 25%;
+      text-align: center;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px;
+      >a{
+        color: #000;
+      }
+    }
+    > li:first-child{
+      >a{
+        color:red;
+      }
+    }
+  }
+}
+
+
+//主体样式
+#main{
+  >.recommon-list{
+    >a{
+      list-style: none;
+      display: block;
+      >.media{
+        padding: 10px 8px;
+        border-bottom: 1px solid #e0e0e0;
+        >.media-body{
+          >h5{
+            color: #000;
+          }
+          >p{
+            color: red;
+            margin-top: 40px;
+            font-size: 20px;
+          }
+          >.box{
+            >div:first-child{
+              float: left;
+              font-size: 12px;
+            }
+            >div:last-child{
+              float: right;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//分页样式
+#page{
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px 0;
+  >.pager{
+    li{
+      text-align: center;
+      >a{
+        float: none;
+        cursor:pointer;
+      }
+      >select{
+        height: 32px;
+        padding: 0px 15px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+//底部样式
+#footer {
+  margin:-10px 0 0 0;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  .sen {
+    height: 35px;
+    background-color: #ff9000;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    padding-left: 10px;
+    line-height: 17px;
+    color:#fff;
+    > strong{
+      font-size: 18px;
+      line-height: 32px;
+      float: left;
+      height: 100%;
+    }
+    > img{
+      float: right;
+      background-color: red;
+    }
+  }
+  > .foot{
+    margin-top: 10px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+
+    height: 34px;
+    line-height: 34px;
+    > a{
+      text-align: center;
+      border-right: 1px solid #c4c4c4;
+    }
+    > a:last-child{
+      border-right:none;
+      >img{
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+        margin-top: -5px;
+        margin-right: 2px;
+      }
+    }
+  }
+  > .end {
+    margin-top:10px;
+    text-align: center;
+    color: #c4c4c4;
+    > p {
+      margin: 0;
+      font-size: 12px;
+      >a:first-child{
+        color: red;
+      }
+    }
+  }
+}
